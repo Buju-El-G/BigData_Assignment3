@@ -1,0 +1,30 @@
+# Python stuff
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*build*/
+*dist*/
+*.egg-info/
+*.spec
+
+# Conda environment (if created locally)
+bigdata_env/
+
+# Large Data Files (Should not be in repo anyway, but good to ignore)
+/amazon_data_raw/
+/amazon_data_cleaned/
+
+# Saved Spark Models (Can be large)
+spark_sentiment_results/sentiment_spark_pipeline_model/
+spark_recommender_results_hashing/als_model_hashing/
+spark_clustering_results_no_brand/feature_pipeline_model_no_brand/
+spark_clustering_results_no_brand/kmeans_model_no_brand/
+
+# Optional: Ignore log files if they get too big
+# *.log
+
+# IDE / OS files
+.idea/
+.vscode/
+*.DS_Store
