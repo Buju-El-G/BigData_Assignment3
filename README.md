@@ -49,14 +49,15 @@ python scripts/sentiment_analysis_spark.py # Start the long script
 Task 1: Data Acquisition python scripts/download_data_server.py
 Task 2: Data Cleaning & Preprocessing python scripts/process_data_server2.py
 Task 3: Exploratory Data Analysis (EDA) python scripts/eda_server.py
-Outputs plots to eda_plots/.Prints correlation results to console.Task 4: Sentiment Analysis (Spark)# Use tmux (see above)
-python scripts/sentiment_analysis_spark.py
-Outputs results to spark_sentiment_results/.Logs append to spark_sentiment_results/sentiment_analysis_spark.log.Task 5: Recommender System - ALS Training (Spark)# Use tmux (see above)
-python scripts/als_recommender_spark_hashing.py
-Outputs results (model, log, results text file) to spark_recommender_results_hashing/.Task 5: Generate Clipped Recommendations (Run after ALS training completes)python scripts/generate_recommendations.py
-Loads the saved ALS model.Prints clipped recommendations to the console.Logs to spark_recommendation_generation/.Task 6: K-Means Clustering (Spark)# Use tmux if runtime is expected to be long, though likely faster (~1 hour)
-python scripts/clustering_spark.py
-Outputs results (models, log, results text file) to spark_clustering_results_no_brand/.NotesSpark scripts are configured to run in local[*] mode, utilizing all available cores on the machine.Memory configurations (spark.driver.memory, spark.executor.memory) are set within the scripts but may need adjustment based on the specific execution environment.
+    Outputs plots to eda_plots/.Prints correlation results to console.
+Task 4: Sentiment Analysis (Spark)# Use tmux (see above) python scripts/sentiment_analysis_spark.py
+    Outputs results to spark_sentiment_results/.Logs append to spark_sentiment_results/sentiment_analysis_spark.log.
+Task 5: Recommender System - ALS Training (Spark)# Use tmux (see above) python scripts/als_recommender_spark_hashing.py
+    Outputs results (model, log, results text file) to spark_recommender_results_hashing/.
+Task 5: Generate Clipped Recommendations (Run after ALS training completes)python scripts/generate_recommendations.py
+    Loads the saved ALS model.Prints clipped recommendations to the console.Logs to spark_recommendation_generation/.
+Task 6: K-Means Clustering (Spark)# Use tmux if runtime is expected to be long, though likely faster (~1 hour) python scripts/clustering_spark.py
+    Outputs results (models, log, results text file) to spark_clustering_results_no_brand/.NotesSpark scripts are configured to run in local[*] mode, utilizing all available cores on the     machine.Memory configurations (spark.driver.memory, spark.executor.memory) are set within the scripts but may need adjustment based on the specific execution environment.
 
 Notes:
 
