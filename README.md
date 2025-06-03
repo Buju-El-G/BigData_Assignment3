@@ -1,11 +1,26 @@
 # Big Data Analytics - Assignment 3
 
-This repository contains the code and instructions for Assignment 3 of the Big Data Analytics course. The project involves analyzing the McAuley-Lab/Amazon-Reviews-2023 dataset using Dask and Apache Spark.
+This repository contains the code and instructions for Assignment 3 of the Big Data Analytics course (COMP 3610 @ U.W.I). The project involves analyzing the McAuley-Lab/Amazon-Reviews-2023 dataset using Dask and Apache Spark.
 
 
 ## Repository Structure
 
-.├── README.md                 # This file├── environment.yml           # Conda environment specification├── scripts/                  # Python scripts for each task│   ├── download_data_server.py    # Task 1: Data Acquisition│   ├── process_data_server2.py       # Task 2: Data Cleaning & Preprocessing│   ├── eda_server.py             # Task 3: Exploratory Data Analysis (Dask)│   ├── sentiment_analysis_spark.py # Task 4: Sentiment Analysis (Spark)│   ├── als_recommender_spark_hashing.py # Task 5: ALS Training (Spark, Hashing)│   ├── als_recommendation_generation_spark.py     # Task 5: Generate Recs from saved model│   ├── clustering_spark_no_brand.py             # Task 6: K-Means Clustering (Spark)│   └── [bigdata_a3_utils.py]     # Utility script│├── results/spark_sentiment_results/    # Output from Task 4├── results/spark_recommender_results_hashing/ # Output from Task 5├── results/spark_clustering_results_no_brand/ # Output from Task 6├── results/spark_recommendation_generation/  # Logs from recommendation generation└── results/eda_plots/                    # Output plots from Task 3
+├── README.md                 # This file
+├── environment.yml           # Conda environment specification
+├── scripts/                  # Python scripts for each task│   
+├── download_data_server.py    # Task 1: Data Acquisition│   
+├── process_data_server2.py       # Task 2: Data Cleaning & Preprocessing│   
+├── eda_server.py             # Task 3: Exploratory Data Analysis (Dask)│   
+├── sentiment_analysis_spark.py # Task 4: Sentiment Analysis (Spark)│   
+├── als_recommender_spark_hashing.py # Task 5: ALS Training (Spark, Hashing)│   
+├── als_recommendation_generation_spark.py     # Task 5: Generate Recs from saved model│   
+├── clustering_spark_no_brand.py             # Task 6: K-Means Clustering (Spark)│   
+└── [bigdata_a3_utils.py]     # Utility script│
+├── results/spark_sentiment_results/    # Output from Task 4
+├── results/spark_recommender_results_hashing/ # Output from Task 5
+├── results/spark_clustering_results_no_brand/ # Output from Task 6
+├── results/spark_recommendation_generation/  # Logs from recommendation generation
+└── results/eda_plots/                    # Output plots from Task 3
 ## Setup
 
 ### Prerequisites
